@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 // Suggested initial states
 const initialMessage = ''
@@ -16,10 +17,23 @@ const initialState = {
 export default class AppClass extends React.Component {
   // THE FOLLOWING HELPERS ARE JUST RECOMMENDATIONS.
   // You can delete them and build your own logic from scratch.
+  constructor(){
+    super();
+    this.state = {
+      gamestate: {
+        ...initialState,
+        xCoord: 2,
+        yCoord: 2
+      }
+    }
+  }
 
-  getXY = () => {
+  getXY = (coordinate, x, y) => {
     // It it not necessary to have a state to track the coordinates.
     // It's enough to know what index the "B" is at, to be able to calculate them.
+    if (coordinate === "11"){
+      this.move
+    }
   }
 
   getXYMessage = () => {
