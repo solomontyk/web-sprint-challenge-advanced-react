@@ -120,7 +120,7 @@ export default class AppClass extends React.Component {
     // Use a POST request to send a payload to the server.
     evt.preventDefault()
     if (this.state.email == "") {
-      this.setState({message: "Try again: email is required."})
+      this.setState({message: "Ouch: email is required."})
     }else if (this.state.email == "foo@bar.baz"){
       this.setState({message: "foo@bar.baz failure #71"})
     }else if (((this.state.email.length - 1) + (this.state.email.length - 2) + (this.state.email.length - 3)) !== "com"){
